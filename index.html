@@ -3,108 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aisya Hijab - Keanggunan dalam Kesantunan</title>
+    <title>Creative Portfolio | Minimalist Cream</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: {
+                            50: '#FDFCF0',
+                            100: '#F9F6E5',
+                            200: '#F2ECD0',
+                            600: '#D4A373', // Warna aksen coklat muda/cream tua
+                            900: '#432818',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
-        .bg-cream-light { background-color: #FDFBF7; }
-        .bg-cream-dark { background-color: #F5EBE0; }
-        .text-cream-accent { color: #D4A373; }
-        .bg-cream-accent { background-color: #D4A373; }
+        .bg-glass { background: rgba(253, 252, 240, 0.8); backdrop-filter: blur(10px); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #F9F6E5; }
+        ::-webkit-scrollbar-thumb { background: #D4A373; border-radius: 10px; }
     </style>
 </head>
-<body class="bg-cream-light text-gray-800">
+<body class="bg-cream-50 text-gray-800">
 
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-serif font-bold text-cream-accent tracking-widest">AISYA<span class="text-gray-400">HIJAB</span></a>
-            <div class="hidden lg:flex space-x-8 font-medium text-xs uppercase tracking-widest">
-                <a href="#home" class="hover:text-cream-accent transition">Home</a>
-                <a href="#about" class="hover:text-cream-accent transition">About</a>
-                <a href="#services" class="hover:text-cream-accent transition">Services</a>
-                <a href="#project" class="hover:text-cream-accent transition">Collection</a>
-                <a href="#pricing" class="hover:text-cream-accent transition">Pricing</a>
-                <a href="#blog" class="hover:text-cream-accent transition">Blog</a>
-                <a href="#contact" class="hover:text-cream-accent transition">Contact</a>
+    <header class="fixed w-full z-50 bg-glass border-b border-cream-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tighter text-cream-900">CREATIVE<span class="text-cream-600">.</span></a>
+            <div class="hidden lg:flex space-x-8 font-medium text-sm uppercase tracking-wider">
+                <a href="#home" class="hover:text-cream-600 transition">Home</a>
+                <a href="#about" class="hover:text-cream-600 transition">About</a>
+                <a href="#services" class="hover:text-cream-600 transition">Services</a>
+                <a href="#project" class="hover:text-cream-600 transition">Project</a>
+                <a href="#blog" class="hover:text-cream-600 transition">Blog</a>
+                <a href="#contact" class="hover:text-cream-600 transition">Contact</a>
             </div>
-            <div class="flex items-center space-x-4">
-                <i class="fas fa-search cursor-pointer"></i>
-                <i class="fas fa-shopping-bag cursor-pointer"></i>
-            </div>
-        </div>
-    </nav>
+            <a href="#contact" class="bg-cream-900 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-cream-600 transition">Hire Me</a>
+        </nav>
+    </header>
 
-    <section id="home" class="relative min-h-screen flex items-center pt-20">
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80" class="w-full h-full object-cover opacity-40" alt="Background">
-        </div>
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="max-w-2xl">
-                <span class="uppercase tracking-[0.3em] text-sm mb-4 block text-cream-accent font-bold">New Collection 2024</span>
-                <h1 class="text-6xl md:text-8xl font-serif mb-6 leading-tight">Keindahan Dalam <br><span class="italic text-gray-400">Kesederhanaan</span></h1>
-                <p class="text-lg text-gray-600 mb-8 leading-relaxed">Temukan koleksi hijab premium dengan bahan ternyaman untuk menemani aktivitas ibadah dan harianmu.</p>
-                <div class="flex space-x-4">
-                    <a href="#project" class="bg-cream-accent text-white px-10 py-4 rounded-full font-bold hover:bg-opacity-90 transition shadow-lg">Belanja Sekarang</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-16 bg-white border-y border-gray-100">
-        <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-                <i class="fas fa-truck text-2xl text-cream-accent mb-3"></i>
-                <h4 class="font-bold text-sm uppercase">Free Shipping</h4>
-                <p class="text-xs text-gray-400">Minimal belanja 200rb</p>
-            </div>
-            <div>
-                <i class="fas fa-medal text-2xl text-cream-accent mb-3"></i>
-                <h4 class="font-bold text-sm uppercase">Premium Quality</h4>
-                <p class="text-xs text-gray-400">Bahan Voal Ultra Fine</p>
-            </div>
-            <div>
-                <i class="fas fa-sync text-2xl text-cream-accent mb-3"></i>
-                <h4 class="font-bold text-sm uppercase">Easy Returns</h4>
-                <p class="text-xs text-gray-400">Garansi tukar 7 hari</p>
-            </div>
-            <div>
-                <i class="fas fa-lock text-2xl text-cream-accent mb-3"></i>
-                <h4 class="font-bold text-sm uppercase">Secure Payment</h4>
-                <p class="text-xs text-gray-400">Enkripsi 100% Aman</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="py-24 bg-cream-light">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center gap-16">
-                <div class="md:w-1/2 relative">
-                    <div class="absolute -top-4 -left-4 w-full h-full border-2 border-cream-accent rounded-lg z-0"></div>
-                    <img src="https://images.unsplash.com/photo-1609505848912-b7c3b8b46495?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="rounded-lg shadow-xl relative z-10" alt="Hijab Model">
-                </div>
-                <div class="md:w-1/2">
-                    <h2 class="text-4xl font-serif mb-6 leading-tight">Memberdayakan Muslimah Melalui Fashion</h2>
-                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">Aisya Hijab lahir dari keinginan untuk menyediakan busana muslim yang tidak hanya syar'i, namun juga modern dan nyaman digunakan sepanjang hari.</p>
-                    <div class="grid grid-cols-2 gap-6 mb-8">
-                        <div>
-                            <h5 class="font-bold text-xl text-cream-accent">50K+</h5>
-                            <p class="text-sm text-gray-500">Pelanggan Puas</p>
-                        </div>
-                        <div>
-                            <h5 class="font-bold text-xl text-cream-accent">100+</h5>
-                            <p class="text-sm text-gray-500">Desain Original</p>
-                        </div>
-                    </div>
-                    <button class="border-b-2 border-cream-accent pb-1 font-bold hover:text-cream-accent transition">Pelajari Visi Kami</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="py-20 bg-cream-dark">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-serif mb-12">Layanan Istimewa Kami</h2>
-            <div class="grid md:grid-cols
+    <section id="home" class="min-h-screen flex items-center pt-20 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-fixed relative">
+        <div class="absolute inset-0 bg-cream-100/90"></div>
+        <div class="container mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2">
+                <span class="text-cream-600 font-bold tracking-widest uppercase text-sm mb-4 block">E
